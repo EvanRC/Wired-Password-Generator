@@ -50,6 +50,12 @@ function generatePassword() {
 if(characters.length === 0){
   return "Please choose min one"
 }
+var password = "" 
+for( i = 0; i < passwordlength; i ++) {
+  var index = Math.floor(Math.random() * characters.length)
+  password += characters [index] 
+}
+return password
 }
 
 // Add event listener to generate button
