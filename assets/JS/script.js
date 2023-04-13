@@ -14,49 +14,38 @@ function writePassword() {
 }
 
 function generatePassword() {
-  var passwordlength = parseInt(prompt ("enter password length"))
-  if (passwordlength < 8 || passwordlength > 126 || isNaN (passwordlength) ){//or ||  and && not !
+  var passwordlength = parseInt(prompt("enter password length")) //function created for passwrod creation
+  if (passwordlength < 8 || passwordlength > 126 || isNaN(passwordlength)) {
     return "please enter valid length"
   }
-  var upperCaseLetters = confirm ("Would you like to have uppercase letters in your password?")
-  var lowerCaseLetters = confirm ("Would you like to have Lowercase letters in your password?")
-  var numbers = confirm ("Would you like to have numbers in your password?")
-  var symbols = confirm ("Would you like to have symbols in your password?")
+  var upperCaseLetters = confirm("Would you like to have uppercase letters in your password?") //creates the criteria for the password
+  var lowerCaseLetters = confirm("Would you like to have Lowercase letters in your password?")
+  var numbers = confirm("Would you like to have numbers in your password?")
+  var symbols = confirm("Would you like to have symbols in your password?") //creates the criteria for the password
   var characters = []
   if (upperCaseLetters) {
-    characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ" //adds uppercase letters to generator
   }
   if (lowerCaseLetters) {
-    characters += "abcdefghijklmnopqrstuvwxyz"
+    characters += "abcdefghijklmnopqrstuvwxyz" //adds lowercase letters to generator
   }
   if (numbers) {
-    characters += "0123456789"
+    characters += "0123456789" //adds numbers to generator 
   }
   if (symbols) {
-    characters += "!@#$%^&*+=?"
-  }  
-  /*
-  var str = "123"
-  var num = 123
-  if(str == num){  // just value comparison
-    console.log("true")
+    characters += "!@#$%^&*+=?" //adds symbols to generator
   }
-  if(str === num){ // value and data type
-    console.log("not reached -- false")
-  }else{
-    console.log("Else")
+
+  if (characters.length === 0) {
+    return "Please select a criteria"
+  }// creates error message if no criteria is selected
+  var password = ""
+  for (i = 0; i < passwordlength; i++) {
+    var index = Math.floor(Math.random() * characters.length)
+    password += characters[index]
   }
-  */
-if(characters.length === 0){
-  return "Please choose min one"
-}
-var password = "" 
-for( i = 0; i < passwordlength; i ++) {
-  var index = Math.floor(Math.random() * characters.length)
-  password += characters [index] 
-}
-return password
-}
+  return password
+} //for loop created for password gerneration
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

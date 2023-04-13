@@ -13,8 +13,8 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family: "Orbitron", sans-serif;
+  background-color:  rgb(37, 66, 66);
 }
 
 .wrapper {
@@ -27,15 +27,16 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color:  rgb(0, 248, 174);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
+  background-color: black;
+  border: 25px solid rgb(255, 0, 140);
   border-width: 1px;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color:cyan;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -52,6 +53,7 @@ header {
 
 .card-body {
   min-height: 100px;
+ 
 }
 
 .card-footer {
