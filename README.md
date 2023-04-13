@@ -21,7 +21,7 @@ N/A
 Please refer to license in the repo.
 
 ## Website URL:
-https://evanrc.github.io/Horiseon-Recoded/
+https://evanrc.github.io/Wired-Password-Generator/
 
 ## Code ScreenShot:
 ![password generator code screenshot](https://user-images.githubusercontent.com/124648885/231635655-5dcc7a8e-f336-49b4-bbca-e2c8bf36a026.png)
