@@ -1,6 +1,4 @@
-![Wired_Password_Generator](https://user-images.githubusercontent.com/124648885/231634874-ba99c718-f2fb-4122-acbe-e154290fd6b5.png)
-
-
+![Skeptic_Password-Generator](https://github.com/EvanRC/Wired-Password-Generator/assets/124648885/9902de68-a361-4c8d-87c8-095fb9685ebc)
 
 ## Description: Added upon existing code to create a functional password generator.
 
